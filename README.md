@@ -216,7 +216,7 @@ Merge branch 'new_branch'
 ~                                                                                                                                                            
 "~/GIT_repositories/git_tutorial/.git/MERGE_MSG" 6L, 252B
 ```
-We have the same situation on the new branch as well.
+Zou can close this interface after adding your explanations and comments there bz pressing `:q`. We have the same situation on the new branch as well.
 ```bash
 $ git status
 On branch main
