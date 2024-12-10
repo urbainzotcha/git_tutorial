@@ -49,7 +49,7 @@ Houses data files used in the project.
 
 Contains test files and test suites.
 
-- `test_script.py`: Script for running tests.
+- `test_script1.py`: Script for running tests.
 
 ## Getting Started
 
