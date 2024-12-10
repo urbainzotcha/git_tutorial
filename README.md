@@ -63,12 +63,12 @@ $ cd Git_Tutorial
 ```bash
 $ git clone https://github.com/omidvarnia/git_tutorial
 Cloning into 'git_tutorial'...
-remote: Enumerating objects: 23, done.
-remote: Counting objects: 100% (23/23), done.
-remote: Compressing objects: 100% (21/21), done.
-remote: Total 23 (delta 4), reused 11 (delta 0), pack-reused 0
-Receiving objects: 100% (23/23), 6.24 KiB | 1.56 MiB/s, done.
-Resolving deltas: 100% (4/4), done.
+remote: Enumerating objects: 33, done.
+remote: Counting objects: 100% (33/33), done.
+remote: Compressing objects: 100% (26/26), done.
+remote: Total 33 (delta 6), reused 14 (delta 1), pack-reused 0 (from 0)
+Receiving objects: 100% (33/33), 42.19 KiB | 1.24 MiB/s, done.
+Resolving deltas: 100% (6/6), done.
 ```
 
 ## View Repository Contents
