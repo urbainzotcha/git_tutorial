@@ -180,11 +180,20 @@ $ git checkout main
 $ echo "This is a conflicting line." > conflicting_file.txt
 $ git add .
 $ git commit -m "Added conflicting file to main branch."
+On branch main
+Your branch is up to date with 'origin/main'.
 
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        conflicting_file.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+```
+```bash
 $ git checkout new_branch
 $ echo "This is a conflicting line." > conflicting_file.txt
 $ git add .
-$ git commit -m "Added conflicting file to feature branch."
+$ git commit -m "Added conflicting file to new branch."
 ```
 Now, try to merge `new_branch` into `main`.
 ```bash
@@ -193,7 +202,22 @@ $ git merge new_branch
 Auto-merging conflicting_file.txt
 CONFLICT (content): Merge conflict in conflicting_file.txt
 Automatic merge failed; fix conflicts and then commit the result.
-
+```
+Then, you will be shown a text editor where you are asked to explain the conflict and commit the change.
+```bash
+Merge branch 'new_branch'
+# Please enter a commit message to explain why this merge is necessary,
+# especially if it merges an updated upstream into a topic branch.
+#
+# Lines starting with '#' will be ignored, and an empty message aborts
+# the commit.
+~                                                                                                                                                            
+~                                                                                                                                                            
+~                                                                                                                                                            
+"~/GIT_repositories/git_tutorial/.git/MERGE_MSG" 6L, 252B
+```
+We have the same situation on the new branch as well.
+```bash
 $ git status
 On branch main
 Your branch is ahead of 'origin/main' by 1 commit.
@@ -202,7 +226,7 @@ You have unmerged paths.
   (fix conflicts and run "git commit")
   (use "git merge --abort" to abort the merge)    
 ``` 
-Open conflicting files and resolve conflicts manually. After resolving, add and commit changes.
+To solve the problem, open conflicting files and resolve conflicts manually. After resolving, add and commit changes.
 ```bash
 $ git add .
 $ git commit -m "Resolved merge conflicts."
