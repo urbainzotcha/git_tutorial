@@ -1,6 +1,8 @@
 # A basic GIT tutorial
 
-This is a dummy repository created for educational purposes. It demonstrates a basic project structure and organization. This tutorial demonstrates how to perform basic Git operations such as cloning a repository, checking the status, creating and switching branches, and pushing changes to a remote repository.
+## [Amir Omidvarnia](mailto:amir.omidvarnia@gmail.com)
+
+This tutorial demonstrates how to perform basic Git operations such as cloning a repository, checking the status, creating and switching branches, and pushing changes to a remote repository. It uses [a dummy epository](https://github.com/omidvarnia/git_tutorial) including a basic project structure and organization to illustrate these operations. The tutorial also covers more advanced topics such as merging branches, resolving merge conflicts, reverting commits, and using `.gitignore` and `.gitkeep` files.
 
 ## Repository Structure
 ```bash
