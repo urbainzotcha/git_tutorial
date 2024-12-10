@@ -216,7 +216,7 @@ Merge branch 'new_branch'
 ~                                                                                                                                                            
 "~/GIT_repositories/git_tutorial/.git/MERGE_MSG" 6L, 252B
 ```
-Zou can close this interface after adding your explanations and comments there bz pressing `:q`. We have the same situation on the new branch as well.
+You can close this interface after adding your explanations and comments there by pressing `:q`. We have the same situation on the new branch as well.
 ```bash
 $ git status
 On branch main
@@ -230,6 +230,10 @@ To solve the problem, open conflicting files and resolve conflicts manually. Aft
 ```bash
 $ git add .
 $ git commit -m "Resolved merge conflicts."
+```
+Finally, we need to `rebase`the changes, i.e., moving the sequence of commits to a new base commit.
+```bash
+$ git rebase --continue
 ```
 
 ## Revert a Commit
