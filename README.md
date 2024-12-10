@@ -140,20 +140,20 @@ $ git commit -m "Removed the new file."
 
 ## Create and Switch Branches
 ```bash
-$ git branch feature_branch
-$ git checkout feature_branch
-Switched to branch 'feature_branch'
+$ git branch new_branch
+$ git checkout new_branch
+Switched to branch 'new_branch'
 
 $ touch additional_file.txt
 $ git add .
 $ git commit -m "Created a new branch and added a new file."
-[feature_branch a30118d] Created a new branch and added a new file.
+[new_branch a30118d] Created a new branch and added a new file.
  1 file changed, 0 insertions(+), 0 deletions(-)
  create mode 100644 additional_file.txt
 
-$ git push origin feature_branch
+$ git push origin new_branch
 To https://github.com/omidvarnia/git_tutorial
- * [new branch]      feature_branch -> feature_branch
+ * [new branch]      new_branch -> new_branch
 ```
 
 ## Return to Main Branch
@@ -168,9 +168,9 @@ Switch to the branch you want to merge into (e.g., main).
 ```bash
 $ git checkout main
 ```
-Merge another branch into it (e.g., feature_branch).
+Merge another branch into it (e.g., new_branch).
 ```bash
-$ git merge feature_branch
+$ git merge new_branch
 ```
 
 ## Resolve Merge Conflicts
