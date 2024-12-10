@@ -174,6 +174,34 @@ $ git merge new_branch
 ```
 
 ## Resolve Merge Conflicts
+Now, we make a simple scenario to demonstrate how to resolve merge conflicts. Make a sample text file on both branches with some conflicting changes.
+```bash
+$ git checkout main
+$ echo "This is a conflicting line." > conflicting_file.txt
+$ git add .
+$ git commit -m "Added conflicting file to main branch."
+
+$ git checkout new_branch
+$ echo "This is a conflicting line." > conflicting_file.txt
+$ git add .
+$ git commit -m "Added conflicting file to feature branch."
+```
+Now, try to merge `new_branch` into `main`.
+```bash
+$ git checkout main
+$ git merge new_branch
+Auto-merging conflicting_file.txt
+CONFLICT (content): Merge conflict in conflicting_file.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)    
+``` 
 Open conflicting files and resolve conflicts manually. After resolving, add and commit changes.
 ```bash
 $ git add .
