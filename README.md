@@ -52,7 +52,7 @@ Contains test files and test suites.
 
 ## Getting Started
 
-## Create and Navigate to a Directory
+## Create and Navigate to a Directory on your local computer
 
 ```bash
 $ mkdir Git_Tutorial
@@ -61,8 +61,8 @@ $ cd Git_Tutorial
 
 ## Clone the repository
 ```bash
-$ git clone https://github.com/omidvarnia/repository_name
-Cloning into 'repository_name'...
+$ git clone https://github.com/omidvarnia/git_tutorial
+Cloning into 'git_tutorial'...
 remote: Enumerating objects: 23, done.
 remote: Counting objects: 100% (23/23), done.
 remote: Compressing objects: 100% (21/21), done.
@@ -73,7 +73,7 @@ Resolving deltas: 100% (4/4), done.
 
 ## View Repository Contents
 ```bash
-$ cd repository_name
+$ cd git_tutorial
 $ tree
 .
 ├── README.md
@@ -123,7 +123,7 @@ Counting objects: 100% (4/4), done.
 Delta compression using up to 8 threads
 Compressing objects: 100% (2/2), done.
 Writing objects: 100% (3/3), 312 bytes | 312.00 KiB/s, done.
-To https://github.com/omidvarnia/repository_name
+To https://github.com/omidvarnia/git_tutorial
    952e06a..6446be7  main -> main
 ```
 
@@ -151,7 +151,7 @@ $ git commit -m "Created a new branch and added a new file."
  create mode 100644 additional_file.txt
 
 $ git push origin feature_branch
-To https://github.com/omidvarnia/repository_name
+To https://github.com/omidvarnia/git_tutorial
  * [new branch]      feature_branch -> feature_branch
 ```
 
