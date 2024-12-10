@@ -7,15 +7,15 @@ This is a dummy repository created for educational purposes. It demonstrates a b
 .
 ├── README.md
 ├── docs
-│ └── example_docs
+│ └── example_docs.docx
 ├── examples
-│ └── example1
+│ └── example1.ipynb
 ├── scripts
 │ └── script1.py
 ├── data
-│ └── sample_data
+│ └── sample_data.dat
 └── tests
-└── test_script
+  └── test_script.py
 ```
 
 ## Directories
@@ -24,13 +24,13 @@ This is a dummy repository created for educational purposes. It demonstrates a b
 
 Contains project documentation.
 
-- `example_docs`: Example documentation files.
+- `example_docs.docx`: Example documentation files.
 
 ### examples
 
 Includes example code or usage scenarios.
 
-- `example1`: First example.
+- `example1.ipynb`: An exemplary jupyter notebook file.
 
 ### scripts
 
@@ -42,7 +42,7 @@ Stores utility scripts and main project code.
 
 Houses data files used in the project.
 
-- `sample_data`: Example data for testing or demonstration.
+- `sample_data.dat`: Example data for testing or demonstration.
 
 ### tests
 
