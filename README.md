@@ -6,16 +6,17 @@ This is a dummy repository created for educational purposes. It demonstrates a b
 ```bash
 .
 ├── README.md
-├── docs
-│ └── example_docs.docx
-├── examples
-│ └── example1.ipynb
-├── scripts
-│ └── script1.py
 ├── data
-│ └── sample_data.dat
+│   └── sample_data.dat
+├── docs
+│   └── example_docs.docx
+├── empty-directory
+├── examples
+│   └── example1.ipynb
+├── scripts
+│   └── script1.py
 └── tests
-  └── test_script.py
+    └── test_script1.py
 ```
 
 ## Directories
