@@ -193,3 +193,40 @@ Hard reset (discards changes)—be careful!
 ```bash
 $ git reset --hard commit_hash
 ```
+
+## Using `.gitignore`
+The `.gitignore` file tells Git to ignore specified files and directories when making commits. This is useful for excluding specific file formats or directories from version control. Here's how to create and use it:
+
+- Create a \texttt{.gitignore} file in the root directory of your project:
+```bash
+$ touch .gitignore
+```
+- Edit the file to specify which files or directories to ignore. For example:
+```bash
+# Ignore the data folder from being sznchronized
+data
+
+# Ignore all .txt files
+*.txt
+
+# Ignore .env files containing sensitive information
+.env
+```
+## Using `.gitkeep`
+
+The `.gitkeep` file is an empty file placed in an otherwise empty directory to force Git to track that directory. This is useful for maintaining directory structures in your repository, even if the directories are initially empty. Here's how to use it:
+
+- Create an empty directory you want Git to track:
+```bash
+$ mkdir empty-directory
+```
+- Add a \texttt{.gitkeep} file to the empty directory:
+```bash
+$ touch empty-directory/.gitkeep
+```
+
+- Add and commit the changes:
+```bash
+$ git add empty-directory/.gitkeep
+$ git commit -m "Add empty directory with .gitkeep"
+```
