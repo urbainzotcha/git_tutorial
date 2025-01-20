@@ -61,10 +61,12 @@ Contains test files and test suites.
 $ mkdir Git_Tutorial
 $ cd Git_Tutorial
 ```
+## Fork the repository to your own GitHub account
+Use the Fork button located at the top-right corner of the repository page. This will create a copy of the repository under your GitHub account, allowing you to make changes without affecting the original repository.
 
 ## Clone the repository
 ```bash
-$ git clone https://github.com/omidvarnia/git_tutorial
+$ git clone https://github.com/username/git_tutorial
 Cloning into 'git_tutorial'...
 remote: Enumerating objects: 33, done.
 remote: Counting objects: 100% (33/33), done.
@@ -73,6 +75,7 @@ remote: Total 33 (delta 6), reused 14 (delta 1), pack-reused 0 (from 0)
 Receiving objects: 100% (33/33), 42.19 KiB | 1.24 MiB/s, done.
 Resolving deltas: 100% (6/6), done.
 ```
+where `username` has to be replaced with your own Github username.
 
 ## View Repository Contents
 ```bash
@@ -126,7 +129,7 @@ Counting objects: 100% (4/4), done.
 Delta compression using up to 8 threads
 Compressing objects: 100% (2/2), done.
 Writing objects: 100% (3/3), 312 bytes | 312.00 KiB/s, done.
-To https://github.com/omidvarnia/git_tutorial
+To https://github.com/username/git_tutorial
    952e06a..6446be7  main -> main
 ```
 
@@ -154,7 +157,7 @@ $ git commit -m "Created a new branch and added a new file."
  create mode 100644 additional_file.txt
 
 $ git push origin new_branch
-To https://github.com/omidvarnia/git_tutorial
+To https://github.com/username/git_tutorial
  * [new branch]      new_branch -> new_branch
 ```
 
