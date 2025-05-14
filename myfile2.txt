@@ -1,1 +1,2 @@
 This is my first contribution
+Just added a second line to this file
